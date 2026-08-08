@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Page Not Found | Okane Innovations FZ-LLC</title>
+
+  <meta
+    name="description"
+    content="The page you are looking for could not be found on the Okane Innovations FZ-LLC website."
+  >
+
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#07111f">
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --text: #ffffff;
+      --muted: #aab7c8;
+      --blue: #43b3ff;
+      --purple: #6f5cff;
+      --border: rgba(255,255,255,.10);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      min-height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+
+      display: flex;
+      flex-direction: column;
+
+      font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      color: var(--text);
+
+      background:
+        radial-gradient(
+          circle at 20% 20%,
+          rgba(67,179,255,.13),
+          transparent 32%
+        ),
+        radial-gradient(
+          circle at 80% 70%,
+          rgba(111,92,255,.13),
+          transparent 32%
+        ),
+        var(--bg);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, 1180px);
+      margin: auto;
+    }
+
+    header {
+      border-bottom:
+        1px solid rgba(255,255,255,.07);
+
+      background:
+        rgba(7,17,31,.82);
+
+      backdrop-filter: blur(18px);
+    }
+
+    .navbar {
+      min-height: 78px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      font-weight: 800;
+    }
+
+    .logo-mark {
+      width: 42px;
+      height: 42px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--blue),
+          var(--purple)
+        );
+
+      font-weight: 900;
+    }
+
+    .logo-text {
+      font-size: 16px;
+    }
+
+    .logo-text span {
+      display: block;
+
+      color: var(--muted);
+
+      font-size: 10px;
+      font-weight: 500;
+
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 28px;
+
+      list-style: none;
+    }
+
+    nav a {
+      color: #dce6f2;
+
+      font-size: 14px;
+      font-weight: 600;
+
+      transition: .25s ease;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .nav-cta {
+      padding: 11px 18px;
+
+      border-radius: 999px;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--blue),
+          var(--purple)
+        );
+    }
+
+    .error {
+      flex: 1;
+
+      display: grid;
+      place-items: center;
+
+      text-align: center;
+
+      padding: 80px 0;
+    }
+
+    .error-content {
+      max-width: 700px;
+    }
+
+    .error-code {
+      font-size:
+        clamp(100px, 20vw, 190px);
+
+      line-height: .85;
+
+      font-weight: 900;
+
+      letter-spacing: -10px;
+
+      background:
+        linear-gradient(
+          100deg,
+          #ffffff,
+          #74c8ff,
+          #8c7bff
+        );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size:
+        clamp(30px, 5vw, 48px);
+
+      line-height: 1.1;
+
+      letter-spacing: -1.5px;
+
+      margin-bottom: 16px;
+    }
+
+    .error-content p {
+      color: var(--muted);
+
+      font-size: 16px;
+
+      line-height: 1.8;
+
+      max-width: 580px;
+
+      margin: 0 auto 30px;
+    }
+
+    .buttons {
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      min-height: 50px;
+
+      padding: 0 24px;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--blue),
+          var(--purple)
+        );
+
+      font-size: 14px;
+      font-weight: 800;
+
+      transition: .25s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button.secondary {
+      background:
+        rgba(255,255,255,.05);
+
+      border:
+        1px solid var(--border);
+    }
+
+    footer {
+      padding: 25px 0;
+
+      border-top:
+        1px solid rgba(255,255,255,.07);
+
+      background: #050d18;
+    }
+
+    .footer-bottom {
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 20px;
+
+      color: #718096;
+
+      font-size: 11px;
+    }
+
+    @media (max-width: 700px) {
+
+      nav {
+        display: none;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+
+        text-align: center;
+      }
+
+      .error {
+        padding: 60px 0;
+      }
+
+      .error-code {
+        letter-spacing: -6px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="container navbar">
+
+    <a href="index.html" class="logo">
+
+      <div class="logo-mark">
+        OI
+      </div>
+
+      <div class="logo-text">
+        Okane Innovations
+        <span>FZ-LLC · UAE</span>
+      </div>
+
+    </a>
+
+    <nav aria-label="Main navigation">
+
+      <ul>
+
+        <li>
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="about.html">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="services.html">
+            Services
+          </a>
+        </li>
+
+        <li>
+          <a href="contact.html">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main class="error">
+
+  <div class="container">
+
+    <div class="error-content">
+
+      <div class="error-code">
+        404
+      </div>
+
+      <h1>
+        Page not found
+      </h1>
+
+      <p>
+        The page you're looking for may have been moved,
+        removed, or the address may be incorrect.
+        Let's get you back to the Okane Innovations website.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          href="index.html"
+          class="button"
+        >
+          Back to Homepage
+        </a>
+
+        <a
+          href="contact.html"
+          class="button secondary"
+        >
+          Contact Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-bottom">
+
+      <span>
+        © <span id="year"></span>
+        Okane Innovations FZ-LLC.
+        All rights reserved.
+      </span>
+
+      <span>
+        Ras Al Khaimah, United Arab Emirates
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
