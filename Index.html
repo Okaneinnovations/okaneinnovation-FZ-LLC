@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Okane Innovations FZ-LLC | Connecting Businesses. Enabling Technology.</title>
+
+  <meta
+    name="description"
+    content="Okane Innovations FZ-LLC provides professional information technology network services and technology solutions for modern businesses."
+  >
+
+  <meta
+    name="keywords"
+    content="Okane Innovations, Okane Innovations FZ-LLC, IT network services, information technology, business technology, UAE technology company"
+  >
+
+  <meta name="author" content="Okane Innovations FZ-LLC">
+
+  <meta property="og:title" content="Okane Innovations FZ-LLC">
+  <meta
+    property="og:description"
+    content="Connecting Businesses. Enabling Technology."
+  >
+  <meta property="og:type" content="website">
+
+  <meta name="theme-color" content="#08111f">
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg-light: #0d1a2b;
+      --card: rgba(255, 255, 255, 0.06);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --text: #ffffff;
+      --muted: #aab7c8;
+      --accent: #43b3ff;
+      --accent-2: #6f5cff;
+      --max-width: 1180px;
+      --radius: 20px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(67, 179, 255, 0.14), transparent 28%),
+        radial-gradient(circle at 85% 20%, rgba(111, 92, 255, 0.14), transparent 28%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(7, 17, 31, 0.78);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+      white-space: nowrap;
+    }
+
+    .logo-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 17px;
+      box-shadow: 0 10px 30px rgba(67, 179, 255, 0.18);
+    }
+
+    .logo-text {
+      font-size: 16px;
+    }
+
+    .logo-text span {
+      display: block;
+      font-size: 10px;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-top: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    nav a {
+      color: #dce6f2;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.25s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .nav-cta {
+      padding: 11px 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #ffffff !important;
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 100vh;
+      padding: 150px 0 90px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: rgba(67, 179, 255, 0.10);
+      filter: blur(80px);
+      top: 100px;
+      right: -120px;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 13px;
+      border: 1px solid rgba(67, 179, 255, 0.22);
+      background: rgba(67, 179, 255, 0.07);
+      border-radius: 999px;
+      color: #9bd7ff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 14px var(--accent);
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: 1.02;
+      letter-spacing: -3px;
+      max-width: 760px;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 .gradient {
+      background: linear-gradient(100deg, #ffffff, #74c8ff, #8c7bff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 34px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 22px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 800;
+      transition: 0.25s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 15px 35px rgba(67, 179, 255, 0.15);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 42px rgba(67, 179, 255, 0.22);
+    }
+
+    .btn-secondary {
+      border-color: var(--card-border);
+      background: rgba(255, 255, 255, 0.04);
+      color: #e8f1fb;
+    }
+
+    .btn-secondary:hover {
+      border-color: rgba(67, 179, 255, 0.35);
+      background: rgba(67, 179, 255, 0.07);
+    }
+
+    /* Hero visual */
+
+    .hero-visual {
+      position: relative;
+      min-height: 470px;
+      display: grid;
+      place-items: center;
+    }
+
+    .network-orb {
+      width: min(390px, 80vw);
+      height: min(390px, 80vw);
+      border-radius: 50%;
+      position: relative;
+      background:
+        radial-gradient(circle at center, rgba(67, 179, 255, 0.18), transparent 45%),
+        rgba(255, 255, 255, 0.025);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      box-shadow:
+        inset 0 0 70px rgba(67, 179, 255, 0.08),
+        0 0 100px rgba(67, 179, 255, 0.08);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .network-orb::before,
+    .network-orb::after {
+      content: "";
+      position: absolute;
+      inset: 12%;
+      border: 1px solid rgba(67, 179, 255, 0.20);
+      border-radius: 50%;
+    }
+
+    .network-orb::after {
+      inset: 26%;
+      border-color: rgba(140, 123, 255, 0.25);
+    }
+
+    .orb-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 105px;
+      height: 105px;
+      border-radius: 28px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      font-size: 30px;
+      font-weight: 900;
+      box-shadow:
+        0 0 50px rgba(67, 179, 255, 0.30),
+        0 20px 50px rgba(0, 0, 0, 0.25);
+    }
+
+    .node {
+      position: absolute;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #0d1a2b;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      color: #9bd7ff;
+      font-weight: 800;
+      font-size: 12px;
+    }
+
+    .node.one {
+      top: 13%;
+      left: 45%;
+    }
+
+    .node.two {
+      top: 38%;
+      right: 6%;
+    }
+
+    .node.three {
+      bottom: 14%;
+      right: 22%;
+    }
+
+    .node.four {
+      bottom: 20%;
+      left: 12%;
+    }
+
+    .node.five {
+      top: 35%;
+      left: 5%;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* =========================
+       SECTION
+    ========================= */
+
+    section {
+      padding: 105px 0;
+      position: relative;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 50px;
+    }
+
+    .section-label {
+      color: #7acbff;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      font-size: 11px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(32px, 4vw, 50px);
+      line-height: 1.12;
+      letter-spacing: -1.8px;
+      margin-bottom: 17px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-copy p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      font-size: 16px;
+    }
+
+    .about-card {
+      padding: 35px;
+      border-radius: var(--radius);
+      background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.07),
+        rgba(255, 255, 255, 0.025)
+      );
+      border: 1px solid var(--card-border);
+    }
+
+    .about-card h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .about-card p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .mini-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .stat {
+      padding: 20px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 24px;
+      margin-bottom: 4px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .services {
+      background: rgba(255, 255, 255, 0.018);
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      padding: 30px;
+      min-height: 250px;
+      border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      transition: 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(67, 179, 255, 0.30);
+      background: rgba(67, 179, 255, 0.06);
+    }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 24px;
+      background: rgba(67, 179, 255, 0.10);
+      border: 1px solid rgba(67, 179, 255, 0.18);
+      color: #8bd2ff;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .service-card h3 {
+      font-size: 20px;
+      margin-bottom: 11px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    /* =========================
+       WHY US
+    ========================= */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .why-card {
+      padding: 28px 22px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .why-number {
+      color: #72c7ff;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+    }
+
+    .why-card h3 {
+      font-size: 17px;
+      margin-bottom: 9px;
+    }
+
+    .why-card p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta-box {
+      position: relative;
+      overflow: hidden;
+      padding: 65px;
+      border-radius: 28px;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(67, 179, 255, 0.16), transparent 35%),
+        radial-gradient(circle at 90% 80%, rgba(111, 92, 255, 0.16), transparent 35%),
+        rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      max-width: 700px;
+      margin: 0 auto 15px;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+    }
+
+    .cta-box p {
+      max-width: 650px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 55px 0 25px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      background: #050d18;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr 0.7fr;
+      gap: 50px;
+      padding-bottom: 40px;
+    }
+
+    .footer-brand p {
+      max-width: 430px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.8;
+      margin-top: 17px;
+    }
+
+    .footer-column h4 {
+      font-size: 13px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .footer-column a {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 9px;
+      transition: 0.2s ease;
+    }
+
+    .footer-column a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: #718096;
+      font-size: 11px;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 950px) {
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 135px;
+      }
+
+      .hero-visual {
+        min-height: 390px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        width: 100%;
+        background: rgba(7, 17, 31, 0.97);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 20px 5%;
+      }
+
+      nav.active {
+        display: block;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+      }
+
+      nav a {
+        display: block;
+        padding: 12px 0;
+      }
+
+      .nav-cta {
+        text-align: center;
+        margin-top: 8px;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .services-grid,
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-box {
+        padding: 45px 25px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo-text {
+        font-size: 14px;
+      }
+
+      .logo-mark {
+        width: 38px;
+        height: 38px;
+      }
+
+      .hero {
+        padding-top: 120px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero-visual {
+        min-height: 320px;
+      }
+
+      .network-orb {
+        width: 300px;
+        height: 300px;
+      }
+
+      .orb-center {
+        width: 82px;
+        height: 82px;
+        border-radius: 22px;
+        font-size: 24px;
+      }
+
+      .node {
+        width: 38px;
+        height: 38px;
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header>
+    <div class="container navbar">
+
+      <a href="#home" class="logo">
+        <div class="logo-mark">OI</div>
+
+        <div class="logo-text">
+          Okane Innovations
+          <span>FZ-LLC · UAE</span>
+        </div>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav id="mainNav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero" id="home">
+
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Information Technology Network Services
+          </div>
+
+          <h1>
+            Connecting Businesses.
+            <span class="gradient">Enabling Technology.</span>
+          </h1>
+
+          <p>
+            Okane Innovations FZ-LLC delivers technology-focused solutions
+            designed to help modern businesses build stronger digital
+            foundations, improve connectivity and operate with confidence.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#services" class="btn btn-primary">
+              Explore Services
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              Talk to Us
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+          <div class="network-orb">
+
+            <div class="orb-center">OI</div>
+
+            <div class="node one">IT</div>
+            <div class="node two">NET</div>
+            <div class="node three">DATA</div>
+            <div class="node four">TECH</div>
+            <div class="node five">B2B</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section id="about">
+
+      <div class="container">
+
+        <div class="about-grid">
+
+          <div class="about-copy">
+
+            <div class="section-label">About Okane Innovations</div>
+
+            <h2>
+              Technology built around the way businesses work.
+            </h2>
+
+            <p>
+              Okane Innovations FZ-LLC is a UAE-based technology company
+              focused on information technology network services and
+              practical digital solutions for modern organizations.
+            </p>
+
+            <p>
+              Our approach is centered on dependable technology,
+              professional service and solutions that support business
+              connectivity and digital operations.
+            </p>
+
+            <a href="#contact" class="btn btn-secondary">
+              Start a Conversation
+            </a>
+
+          </div>
+
+
+          <div class="about-card">
+
+            <h3>Our Approach</h3>
+
+            <p>
+              We believe technology should make business simpler,
+              more connected and more capable. Every solution should
+              have a clear purpose and contribute to a stronger digital
+              foundation.
+            </p>
+
+            <div class="mini-stats">
+
+              <div class="stat">
+                <strong>01</strong>
+                <span>Business-focused thinking</span>
+              </div>
+
+              <div class="stat">
+                <strong>02</strong>
+                <span>Technology-led solutions</span>
+              </div>
+
+              <div class="stat">
+                <strong>03</strong>
+                <span>Professional delivery</span>
+              </div>
+
+              <div class="stat">
+                <strong>04</strong>
+                <span>Long-term perspective</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section class="services" id="services">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="section-label">What We Do</div>
+
+          <h2>
+            Technology services for connected businesses.
+          </h2>
+
+          <p>
+            Our services are designed around the technology and
+            connectivity needs of modern businesses.
+          </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+          <article class="service-card">
+
+            <div class="service-icon">01</div>
+
+            <h3>IT Network Services</h3>
+
+            <p>
+              Technology and network-focused services that support
+              reliable business connectivity and digital operations.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">02</div>
+
+            <h3>Business Technology</h3>
+
+            <p>
+              Practical technology solutions designed to support
+              business workflows, communication and operational needs.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">03</div>
+
+            <h3>Digital Connectivity</h3>
+
+            <p>
+              Technology solutions that help businesses stay connected
+              across their people, systems and digital environment.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">04</div>
+
+            <h3>Technology Solutions</h3>
+
+            <p>
+              Solution-oriented technology support built around the
+              specific objectives and requirements of a business.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">05</div>
+
+            <h3>IT Infrastructure</h3>
+
+            <p>
+              A technology-focused approach to the infrastructure
+              businesses rely on for their everyday digital activities.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">06</div>
+
+            <h3>Business Support</h3>
+
+            <p>
+              Professional technology assistance focused on helping
+              organizations maintain effective digital operations.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         WHY US
+    ========================== -->
+
+    <section id="why-us">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="section-label">Why Okane Innovations</div>
+
+          <h2>
+            A practical approach to business technology.
+          </h2>
+
+          <p>
+            We combine a business-first mindset with technology-focused
+            thinking to create a professional and dependable experience.
+          </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+          <div class="why-card">
+            <div class="why-number">01 / FOCUS</div>
+            <h3>Business First</h3>
+            <p>
+              Technology should support real business objectives,
+              not create unnecessary complexity.
+            </p>
+          </div>
+
+
+          <div class="why-card">
+            <div class="why-number">02 / THINKING</div>
+            <h3>Solution Mindset</h3>
+            <p>
+              We focus on practical solutions that address the
+              technology requirements of modern organizations.
+            </p>
+          </div>
+
+
+          <div class="why-card">
+            <div class="why-number">03 / STANDARD</div>
+            <h3>Professional Approach</h3>
+            <p>
+              Clear communication, structured thinking and a
+              professional approach are central to our work.
+            </p>
+          </div>
+
+
+          <div class="why-card">
+            <div class="why-number">04 / FUTURE</div>
+            <h3>Built for Growth</h3>
+            <p>
+              We aim to create technology foundations that can
+              evolve alongside changing business needs.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT CTA
+    ========================== -->
+
+    <section id="contact">
+
+      <div class="container">
+
+        <div class="cta-box">
+
+          <div class="section-label">Let's Connect</div>
+
+          <h2>
+            Ready to build a stronger technology foundation?
+          </h2>
+
+          <p>
+            Tell us about your business requirement and let’s explore
+            how technology can support your next step.
+          </p>
+
+          <a
+            href="mailto:okaneinnovations.uae@gmail.com"
+            class="btn btn-primary"
+          >
+            Contact Okane Innovations
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+
+          <a href="#home" class="logo">
+
+            <div class="logo-mark">OI</div>
+
+            <div class="logo-text">
+              Okane Innovations
+              <span>FZ-LLC · UAE</span>
+            </div>
+
+          </a>
+
+          <p>
+            Connecting Businesses. Enabling Technology.
+            Professional information technology network services
+            for modern businesses.
+          </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>Navigation</h4>
+
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>Contact</h4>
+
+          <a href="mailto:okaneinnovations.uae@gmail.com">
+            Email Us
+          </a>
+
+          <span style="color:#718096;font-size:13px;">
+            Ras Al Khaimah, UAE
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © <span id="year"></span> Okane Innovations FZ-LLC.
+          All rights reserved.
+        </span>
+
+        <span>
+          Information Technology Network Services
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("active");
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        isOpen ? "true" : "false"
+      );
+    });
+
+    document.querySelectorAll("#mainNav a").forEach(link => {
+      link.addEventListener("click", () => {
+        mainNav.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
