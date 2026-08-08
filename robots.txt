@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://okaneinnovations.github.io/okaneinnovation-FZ-LLC/sitemap.xml
