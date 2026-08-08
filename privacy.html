@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Privacy Policy | Okane Innovations FZ-LLC</title>
+
+  <meta
+    name="description"
+    content="Privacy Policy for the official website of Okane Innovations FZ-LLC."
+  >
+
+  <meta name="author" content="Okane Innovations FZ-LLC">
+  <meta name="theme-color" content="#07111f">
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --card: rgba(255,255,255,.055);
+      --border: rgba(255,255,255,.11);
+      --text: #ffffff;
+      --muted: #aab7c8;
+      --blue: #43b3ff;
+      --purple: #6f5cff;
+      --max: 1000px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      background:
+        radial-gradient(
+          circle at 15% 5%,
+          rgba(67,179,255,.11),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 85% 20%,
+          rgba(111,92,255,.11),
+          transparent 30%
+        ),
+        var(--bg);
+
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: auto;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+
+      background: rgba(7,17,31,.86);
+      backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+
+    .navbar {
+      min-height: 78px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .logo-mark {
+      width: 42px;
+      height: 42px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--blue),
+          var(--purple)
+        );
+
+      font-weight: 900;
+    }
+
+    .logo-text {
+      font-size: 16px;
+    }
+
+    .logo-text span {
+      display: block;
+
+      color: var(--muted);
+
+      font-size: 10px;
+      font-weight: 500;
+
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+
+      list-style: none;
+    }
+
+    nav a {
+      color: #dce6f2;
+
+      font-size: 14px;
+      font-weight: 600;
+
+      transition: .25s ease;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .nav-cta {
+      padding: 11px 18px;
+
+      border-radius: 999px;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--blue),
+          var(--purple)
+        );
+    }
+
+    .menu-toggle {
+      display: none;
+
+      border: 0;
+      background: transparent;
+
+      color: white;
+      font-size: 28px;
+
+      cursor: pointer;
+    }
+
+    .hero {
+      padding: 155px 0 65px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+
+      padding: 7px 13px;
+
+      margin-bottom: 20px;
+
+      border-radius: 999px;
+
+      background: rgba(67,179,255,.07);
+
+      border: 1px solid rgba(67,179,255,.20);
+
+      color: #9bd7ff;
+
+      font-size: 11px;
+      font-weight: 800;
+
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(40px,6vw,65px);
+
+      line-height: 1.05;
+
+      letter-spacing: -2.5px;
+
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: var(--muted);
+
+      font-size: 17px;
+
+      max-width: 700px;
+    }
+
+    .policy {
+      padding: 20px 0 100px;
+    }
+
+    .policy-card {
+      padding: 45px;
+
+      border-radius: 24px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.065),
+          rgba(255,255,255,.025)
+        );
+
+      border: 1px solid var(--border);
+    }
+
+    .updated {
+      margin-bottom: 35px;
+
+      color: #7e8da1;
+
+      font-size: 12px;
+    }
+
+    .policy-section {
+      margin-bottom: 38px;
+    }
+
+    .policy-section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 23px;
+
+      margin-bottom: 12px;
+
+      letter-spacing: -.5px;
+    }
+
+    h3 {
+      font-size: 16px;
+
+      margin:
+        20px 0 8px;
+    }
+
+    p {
+      color: var(--muted);
+
+      font-size: 14px;
+
+      line-height: 1.85;
+
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 22px;
+
+      color: var(--muted);
+
+      font-size: 14px;
+
+      line-height: 1.9;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    strong {
+      color: #e7eef7;
+    }
+
+    .notice {
+      margin-top: 20px;
+
+      padding: 18px 20px;
+
+      border-radius: 14px;
+
+      background: rgba(67,179,255,.045);
+
+      border: 1px solid rgba(67,179,255,.12);
+
+      color: #9eafc2;
+
+      font-size: 13px;
+    }
+
+    footer {
+      padding: 45px 0 25px;
+
+      background: #050d18;
+
+      border-top:
+        1px solid rgba(255,255,255,.07);
+    }
+
+    .footer-grid {
+      display: grid;
+
+      grid-template-columns:
+        1.4fr .6fr .7fr;
+
+      gap: 40px;
+
+      padding-bottom: 35px;
+    }
+
+    .footer-brand p {
+      max-width: 400px;
+
+      margin-top: 15px;
+
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 15px;
+
+      font-size: 12px;
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
+    }
+
+    .footer-column a {
+      display: block;
+
+      color: var(--muted);
+
+      font-size: 13px;
+
+      margin-bottom: 8px;
+    }
+
+    .footer-column a:hover {
+      color: var(--blue);
+    }
+
+    .footer-bottom {
+      padding-top: 20px;
+
+      border-top:
+        1px solid rgba(255,255,255,.07);
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 20px;
+
+      color: #718096;
+
+      font-size: 11px;
+    }
+
+    @media (max-width: 750px) {
+
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        display: none;
+
+        position: absolute;
+
+        top: 78px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 20px 5%;
+
+        background: rgba(7,17,31,.98);
+
+        border-bottom:
+          1px solid rgba(255,255,255,.08);
+      }
+
+      nav.active {
+        display: block;
+      }
+
+      nav ul {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 3px;
+      }
+
+      nav a {
+        display: block;
+
+        padding: 11px 0;
+      }
+
+      .nav-cta {
+        text-align: center;
+      }
+
+      .policy-card {
+        padding: 28px 21px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="container navbar">
+
+    <a href="index.html" class="logo">
+
+      <div class="logo-mark">
+        OI
+      </div>
+
+      <div class="logo-text">
+        Okane Innovations
+        <span>FZ-LLC · UAE</span>
+      </div>
+
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open navigation"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+    <nav id="mainNav">
+
+      <ul>
+
+        <li>
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="about.html">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="services.html">
+            Services
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#why-us">
+            Why Us
+          </a>
+        </li>
+
+        <li>
+          <a href="contact.html" class="nav-cta">
+            Contact Us
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+  <section class="hero">
+
+    <div class="container">
+
+      <span class="eyebrow">
+        Legal & Privacy
+      </span>
+
+      <h1>
+        Privacy Policy
+      </h1>
+
+      <p>
+        This Privacy Policy explains how information may be
+        handled when you visit or interact with the website of
+        Okane Innovations FZ-LLC.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <section class="policy">
+
+    <div class="container">
+
+      <div class="policy-card">
+
+        <div class="updated">
+          Last updated: August 2026
+        </div>
+
+
+        <div class="policy-section">
+
+          <h2>
+            1. Introduction
+          </h2>
+
+          <p>
+            Okane Innovations FZ-LLC respects the privacy of
+            visitors to its website and is committed to handling
+            information responsibly.
+          </p>
+
+          <p>
+            This Privacy Policy describes the general approach
+            to information that may be collected through this
+            website and how such information may be used.
+          </p>
+
+        </div>
+
+
+        <div class="policy-section">
+
+          <h2>
+            2. Information We May Receive
+          </h2>
+
+          <p>
+            Depending on how you interact with the website, we
+            may receive information that you voluntarily provide,
+            such as:
+          </p>
+
+          <ul>
+
+            <li>
+              Your name or business name.
+            </li>
+
+            <li>
+              Your email address.
+            </li>
+
+            <li>
+              Information included in a business enquiry.
+            </li>
+
+            <li>
+              Other information that you choose to provide
+              when contacting us.
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="policy-section">
+
+          <h2>
+            3. Information Collected Automatically
+          </h2>
+
+          <p>
+            Like many websites, basic technical information may
+            be processed by hosting, security, analytics or other
+            technical services used to operate the website.
+          </p>
+
+          <p>
+            Such information may include technical identifiers,
+            browser information, device information, approximate
+            usage information and website access information,
+            depending on the services enabled on the website.
+          </p>
+
+        </div>
+
+
+        <div class="policy-section">
+
+          <h2>
+            4. How Information May Be Used
+          </h2>
+
+          <p>
+            Information may be used for legitimate business and
+            operational purposes, including:
+          </p>
+
+          <ul>
+
+            <li>
+              Responding to enquiries.
+            </li>
+
+            <li>
+              Communicating about requested services or
+              information.
+            </li>
+
+            <li>
+              Maintaining and improving the website.
+            </li>
+
+            <li>
+              Protecting the website and its users against
+              misuse or security threats.
+            </li>
+
+            <li>
+              Meeting applicable legal or regulatory obligations.
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="policy-section">
+
+          <h2>
+            5. Email Communications
+          </h2>
+
+          <p>
+            If you contact Okane Innovations through the email
+            address displayed on this website, information contained
+            in your communication may be used to respond to your
+            enquiry and manage the related business communication.
+          </p>
+
+          <p>
+            Please avoid sending sensitive personal information
+            unless it is specifically necessary for your enquiry.
+          </p>
+
+        </div>
+
+
+        <div class="policy-section">
+
+          <h2>
+            6. Cookies and Similar Technologies
+          </h2>
+
+          <p>
+            This website may use cookies or similar technologies
+            if such functionality is enabled through hosting,
+            analytics, security or third-party services.
+          </p>
+
+          <p>
+            Where applicable, your browser may provide controls
+            for managing or restricting cookies.
+          </p>
+
+        </div>
+
+
+        <div class="policy-section">
+
+          <h2>
+            7. Third-Party Services
+          </h2>
+
+          <p>
+            The website may use third-party infrastructure or
+            services for hosting, security, analytics, communication
+            or other operational purposes.
+          </p>
+
+          <p>
+            Those third parties may process information according
+            to their own privacy policies and terms.
+          </p>
+
+        </div>
+
+
+        <div class="policy-section">
+
+          <h2>
+            8. Data Security
+          </h2>
+
+          <p>
+            Reasonable technical and organizational measures may
+            be used to protect information handled through the
+            website.
+          </p>
+
+          <p>
+            However, no internet transmission or electronic storage
+            system can be guaranteed to be completely secure.
+          </p>
+
+        </div>
+
+
+        <div class="policy-section">
+
+          <h2>
+            9. Data Retention
+          </h2>
+
+          <p>
+            Information may be retained for as long as reasonably
+            necessary for the purpose for which it was collected,
+            to maintain business records, resolve enquiries,
+            protect legitimate interests, or comply with applicable
+            legal obligations.
+          </p>
+
+        </div>
+
+
+        <div class="policy-section">
+
+          <h2>
+            10. Your Choices
+          </h2>
+
+          <p>
+            Depending on applicable law, you may have rights relating
+            to personal information, including rights to request
+            access, correction, deletion or other forms of control.
+          </p>
+
+          <p>
+            Requests can be directed to the contact email provided
+            below.
+          </p>
+
+        </div>
+
+
+        <div class="policy-section">
+
+          <h2>
+            11. Children's Privacy
+          </h2>
+
+          <p>
+            This website is intended for business and general
+            informational purposes and is not specifically directed
+            toward children.
+          </p>
+
+        </div>
+
+
+        <div class="policy-section">
+
+          <h2>
+            12. Policy Updates
+          </h2>
+
+          <p>
+            This Privacy Policy may be updated from time to time
+            to reflect changes in the website, business operations,
+            technology or applicable requirements.
+          </p>
+
+          <p>
+            The updated version will be published on this page
+            with a revised date where appropriate.
+          </p>
+
+        </div>
+
+
+        <div class="policy-section">
+
+          <h2>
+            13. Contact
+          </h2>
+
+          <p>
+            If you have questions regarding this Privacy Policy
+            or wish to make a privacy-related enquiry, please
+            contact:
+          </p>
+
+          <p>
+            <strong>
+              Okane Innovations FZ-LLC
+            </strong>
+            <br>
+
+            Ras Al Khaimah, United Arab Emirates
+            <br>
+
+            Email:
+            <a
+              href="mailto:okaneinnovations.uae@gmail.com"
+              style="color:#7acbff;"
+            >
+              okaneinnovations.uae@gmail.com
+            </a>
+          </p>
+
+          <div class="notice">
+            This page is a general website privacy-policy draft
+            and should be reviewed against the company's actual
+            legal structure, data-processing activities and
+            applicable UAE requirements before being treated as
+            formal legal advice.
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+
+        <a href="index.html" class="logo">
+
+          <div class="logo-mark">
+            OI
+          </div>
+
+          <div class="logo-text">
+            Okane Innovations
+            <span>FZ-LLC · UAE</span>
+          </div>
+
+        </a>
+
+        <p>
+          Connecting Businesses. Enabling Technology.
+          Professional information technology network services
+          for modern businesses.
+        </p>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>
+          Navigation
+        </h4>
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="services.html">
+          Services
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>
+          Legal
+        </h4>
+
+        <a href="privacy.html">
+          Privacy Policy
+        </a>
+
+        <a href="terms.html">
+          Terms & Conditions
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © <span id="year"></span>
+        Okane Innovations FZ-LLC.
+        All rights reserved.
+      </span>
+
+      <span>
+        Privacy Policy
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+  const menuToggle =
+    document.getElementById("menuToggle");
+
+  const mainNav =
+    document.getElementById("mainNav");
+
+
+  menuToggle.addEventListener("click", () => {
+
+    const isOpen =
+      mainNav.classList.toggle("active");
+
+    menuToggle.setAttribute(
+      "aria-expanded",
+      isOpen ? "true" : "false"
+    );
+
+  });
+
+
+  document
+    .querySelectorAll("#mainNav a")
+    .forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        mainNav.classList.remove("active");
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+      });
+
+    });
+
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
