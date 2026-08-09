@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="65%">
+      <stop offset="0" stop-color="#12345c"/>
+      <stop offset="0.72" stop-color="#06152d"/>
+      <stop offset="1" stop-color="#020812"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" stop-color="#fff0a3"/>
+      <stop offset="0.28" stop-color="#f6c84a"/>
+      <stop offset="0.62" stop-color="#d99b16"/>
+      <stop offset="1" stop-color="#fff0a3"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#0077ff"/>
+      <stop offset="0.55" stop-color="#00c8ff"/>
+      <stop offset="1" stop-color="#74e8ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity=".55"/>
+    </filter>
+  </defs>
+
+  <circle cx="256" cy="256" r="246" fill="url(#bg)" stroke="url(#gold)" stroke-width="16"/>
+  <circle cx="256" cy="256" r="218" fill="none" stroke="#1d79c8" stroke-opacity=".45" stroke-width="2"/>
+
+  <!-- subtle globe -->
+  <g fill="none" stroke="#1b76bd" stroke-opacity=".28" stroke-width="3">
+    <ellipse cx="256" cy="256" rx="160" ry="205"/>
+    <ellipse cx="256" cy="256" rx="80" ry="205"/>
+    <path d="M62 256h388M78 175h356M78 337h356"/>
+  </g>
+
+  <!-- OI monogram -->
+  <g filter="url(#shadow)" fill="none" stroke="url(#gold)" stroke-width="34" stroke-linecap="round">
+    <ellipse cx="205" cy="250" rx="112" ry="135"/>
+    <path d="M304 128v244M304 128h45M304 372h45"/>
+  </g>
+
+  <!-- growth swoosh -->
+  <path d="M84 313 C165 365, 291 351, 398 188"
+        fill="none" stroke="#04152d" stroke-width="38" stroke-linecap="round"/>
+  <path d="M84 313 C165 365, 291 351, 398 188"
+        fill="none" stroke="url(#blue)" stroke-width="22" stroke-linecap="round"/>
+  <path d="M386 188 L424 170 L407 208 Z" fill="url(#gold)"/>
+
+  <!-- small brand name -->
+  <text x="256" y="426" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="42" font-weight="700" letter-spacing="7"
+        fill="url(#gold)">OKANE</text>
+</svg>
