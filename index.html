@@ -795,8 +795,7 @@
       }
     }
 
-    @media (max-width: 760px) {#contact form > div:first-child {
-  grid-template-columns: 1fr !important;
+    @media (max-width: 760px) 
     }
       .menu-toggle {
         display: block;
@@ -858,6 +857,8 @@
       .footer-bottom {
         flex-direction: column;
       }
+    }#contact form > div:first-child {
+  grid-template-columns: 1fr !important;
     }
 
     @media (max-width: 480px) {
@@ -903,7 +904,16 @@
         height: 38px;
         font-size: 10px;
       }
-    }
+    }#contact .btn {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#contact input,
+#contact textarea {
+  font-size: 16px !important;
+}
     </style>
     <!-- Okane Innovations Structured Data -->
 <script type="application/ld+json">
