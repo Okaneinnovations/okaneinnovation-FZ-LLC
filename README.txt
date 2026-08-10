@@ -1,23 +1,13 @@
-OKANE INNOVATIONS FZ-LLC — FINAL MULTI-PAGE WEBSITE
+OKANE INNOVATIONS FZ-LLC — PREMIUM WEBSITE PACKAGE
 
-This is the complete replacement package.
+This package keeps the working multi-page navigation and upgrades the visual design:
+- Premium navy / gold corporate theme
+- Refined logo + favicon
+- Improved typography, spacing, cards, buttons and mobile layout
+- Stronger Home page hero and statistics
+- All existing pages remain connected
 
-Upload ALL files in this folder to the repository root and replace same-name files:
-index.html
-about.html
-services.html
-service-details.html
-why-us.html
-contact.html
-payment.html
-privacy.html
-terms.html
-styles.css
-script.js
-logo.svg
-favicon.svg
+Replace the existing same-name files in the GitHub repository with all files in this package.
 
-All main navigation, hero buttons, cards, service cards, service detail actions, footer links, contact links, privacy/terms links and payment navigation are connected.
-
-IMPORTANT:
-The payment page is ready for a real verified gateway, but no fake gateway credentials or fake checkout URL is included. A verified merchant checkout URL/account must be connected before taking live payments.
+Payment:
+The Pay Online page is a professional placeholder until a verified merchant gateway checkout URL/account is connected. No fake payment gateway or credentials are included.
