@@ -53,8 +53,31 @@
     }
 
     html {
-      scroll-behavior: smooth;
-    }
+  scroll-behavior: smooth;
+  height: auto !important;
+  overflow-y: auto !important;
+}
+
+body {
+  min-height: 100vh !important;
+  height: auto !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  position: static !important;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y !important;
+}
+
+main {
+  display: block !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+section {
+  position: relative;
+  scroll-margin-top: 90px;
+}
 
     body {
       font-family: "Inter", sans-serif;
