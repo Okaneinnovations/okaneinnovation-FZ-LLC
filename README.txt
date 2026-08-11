@@ -1,13 +1,16 @@
-OKANE INNOVATIONS FZ-LLC — PREMIUM WEBSITE PACKAGE
+OKANE INNOVATIONS FZ-LLC — PREMIUM FINAL + CONTACT
 
-This package keeps the working multi-page navigation and upgrades the visual design:
-- Premium navy / gold corporate theme
-- Refined logo + favicon
-- Improved typography, spacing, cards, buttons and mobile layout
-- Stronger Home page hero and statistics
-- All existing pages remain connected
+Included:
+- Premium corporate navy/gold visual design
+- Refined logo and favicon
+- Working multi-page navigation
+- WhatsApp quick-action: +91 95285 57376
+- Helpline quick-action: +1 212 365 8444
+- Contact page WhatsApp + Helpline
+- Payment page assistance CTA
+- Responsive/mobile-friendly quick actions
+- Existing service, about, why-us, privacy and terms pages retained
 
-Replace the existing same-name files in the GitHub repository with all files in this package.
+Replace the same-name files in your GitHub repository and commit the changes.
 
-Payment:
-The Pay Online page is a professional placeholder until a verified merchant gateway checkout URL/account is connected. No fake payment gateway or credentials are included.
+Payment gateway is intentionally not connected yet. Connect a verified merchant gateway later; do not publish banking credentials on the public website.

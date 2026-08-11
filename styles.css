@@ -73,3 +73,12 @@ footer{padding:52px 0 22px;background:#010710;border-top:1px solid var(--line)}
 .copy{text-align:center;color:#617388;font-size:10px;border-top:1px solid var(--line);margin-top:34px;padding-top:18px}
 @media(max-width:850px){nav{display:none;position:absolute;top:78px;left:0;right:0;background:#03101f;padding:18px 5%;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line);box-shadow:0 20px 35px rgba(0,0,0,.3)}nav.open{display:flex}.menu{display:block}.grid{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.hero-stats{grid-template-columns:1fr 1fr}.foot{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.grid{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.hero{min-height:auto;padding:72px 0}.pagehero{padding:70px 0}h1{font-size:44px;letter-spacing:-1px}.actions{flex-direction:column}.btn{width:100%}.logo img{width:43px;height:43px}.logo b{font-size:11px}.hero-stats{grid-template-columns:1fr 1fr;margin-top:42px}.stat{padding:15px 12px}.stat strong{font-size:18px}.foot{grid-template-columns:1fr}}
+
+/* Professional contact quick-actions */
+.quick-actions{position:fixed;right:20px;bottom:20px;z-index:1200;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.quick-action{display:flex;align-items:center;gap:9px;padding:10px 14px;border-radius:999px;background:rgba(5,18,32,.96);border:1px solid rgba(255,255,255,.14);box-shadow:0 12px 35px rgba(0,0,0,.35);font-size:11px;font-weight:800;color:#fff;transition:.2s}
+.quick-action:hover{transform:translateY(-2px);border-color:rgba(241,194,75,.45)}
+.quick-action .qa-icon{width:31px;height:31px;border-radius:50%;display:grid;place-items:center;background:rgba(241,194,75,.14);color:var(--gold2);font-size:14px}
+.quick-action.whatsapp .qa-icon{background:rgba(37,211,102,.12);color:#7df0a1}
+.header-call{color:var(--gold2)!important}
+@media(max-width:560px){.quick-actions{right:12px;bottom:12px}.quick-action{padding:8px 11px}.quick-action span.label{display:none}.quick-action .qa-icon{width:36px;height:36px}.quick-action{padding:4px}}
